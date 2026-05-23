@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Fundo de energia se mexendo (sem as linhas de grade) */
+.bg-energia {
+  background: linear-gradient(-45deg, #0a0505, #1f0808, #2a0a0a, #140505);
+  background-size: 400% 400%;
+  animation: gradientBg 12s ease infinite;
+}
+
+@keyframes gradientBg {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Animações da tela de redirecionamento (Logo pulsando) */
+@keyframes pulseGlow {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 15px rgba(234, 88, 12, 0.6)); }
+  50% { transform: scale(1.08); filter: drop-shadow(0 0 30px rgba(234, 88, 12, 0.9)); }
+}
+.animate-pulse-glow { animation: pulseGlow 1.5s ease-in-out infinite; }
+
+/* Animação Cascata (Combos subindo) */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }

@@ -1,12 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
 
+// LINKS ATUALIZADOS PARA O MEU CARRINHO
 const combosData = [
-  { id: 1, img: '/combo1.png', link: 'https://destak-lanches.goomer.app/detail/11299354', delay: 'delay-100' },
-  { id: 2, img: '/combo2.png', link: 'https://destak-lanches.goomer.app/detail/11299360', delay: 'delay-200' },
-  { id: 3, img: '/combo3.png', link: 'https://destak-lanches.goomer.app/detail/11299361', delay: 'delay-300' },
-  { id: 4, img: '/combo4.png', link: 'https://destak-lanches.goomer.app/detail/11299362', delay: 'delay-400' },
-  { id: 5, img: '/combo5.png', link: 'https://destak-lanches.goomer.app/detail/11299363', delay: 'delay-500' },
-  { id: 6, img: '/combo6.png', link: 'https://destak-lanches.goomer.app/detail/11299364', delay: 'delay-600' },
+  { id: 1, img: '/combo1.png', link: 'https://meucarrinho.delivery/destaklanches/products/1ee4f730-1267-48c7-8a7f-60dbed290268', delay: 'delay-100' },
+  { id: 2, img: '/combo2.png', link: 'https://meucarrinho.delivery/destaklanches/products/923a10b7-e9eb-485a-99fa-f27353765c88', delay: 'delay-200' },
+  { id: 3, img: '/combo3.png', link: 'https://meucarrinho.delivery/destaklanches/products/af2e0eda-ef9c-4392-a3d0-ab48283faba4', delay: 'delay-300' },
+  { id: 4, img: '/combo4.png', link: 'https://meucarrinho.delivery/destaklanches/products/ae012da4-c209-4157-b63e-49aae34cf12b', delay: 'delay-400' },
+  { id: 5, img: '/combo5.png', link: 'https://meucarrinho.delivery/destaklanches/products/5f4de938-b0dc-45c4-9c63-51fe5517a86a', delay: 'delay-500' },
+  { id: 6, img: '/combo6.png', link: 'https://meucarrinho.delivery/destaklanches/products/f281b246-88b4-41b2-99df-e6a37cb431d3', delay: 'delay-600' },
 ];
 
 export default function Combos() {
@@ -44,7 +45,6 @@ export default function Combos() {
             onClick={(e) => handleComboClick(e, combo.link)}
             className={`relative w-full flex items-center justify-center bg-neutral-900 overflow-hidden rounded-2xl shadow-lg border border-neutral-800 hover:border-orange-500/50 group cursor-pointer transition-all duration-300 ${isVisible ? `animate-fade-in-up ${combo.delay}` : 'opacity-0'}`}
           >
-            {/* Brilho de fundo suave na imagem */}
             <div className="absolute inset-0 bg-gradient-to-t from-orange-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
             
             <img src={combo.img} alt={`Combo ${combo.id}`} className="w-full h-auto object-contain transform transition-transform duration-500 group-hover:scale-105" />

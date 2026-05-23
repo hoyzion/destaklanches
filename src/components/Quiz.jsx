@@ -1,5 +1,15 @@
 import { useState } from 'react';
 
+// Dicionário com os links do Meu Carrinho
+const comboLinks = {
+  1: 'https://meucarrinho.delivery/destaklanches/products/1ee4f730-1267-48c7-8a7f-60dbed290268',
+  2: 'https://meucarrinho.delivery/destaklanches/products/923a10b7-e9eb-485a-99fa-f27353765c88',
+  3: 'https://meucarrinho.delivery/destaklanches/products/af2e0eda-ef9c-4392-a3d0-ab48283faba4',
+  4: 'https://meucarrinho.delivery/destaklanches/products/ae012da4-c209-4157-b63e-49aae34cf12b',
+  5: 'https://meucarrinho.delivery/destaklanches/products/5f4de938-b0dc-45c4-9c63-51fe5517a86a',
+  6: 'https://meucarrinho.delivery/destaklanches/products/f281b246-88b4-41b2-99df-e6a37cb431d3'
+};
+
 export default function Quiz() {
   const [step, setStep] = useState(0);
   const [result, setResult] = useState(null);
@@ -20,7 +30,7 @@ export default function Quiz() {
     setResult({
       title: `O Combo ${randomCombo} é perfeito pra você!`,
       img: `/combo${randomCombo}.png`,
-      link: `https://destak-lanches.goomer.app/detail/112993${53 + randomCombo}`
+      link: comboLinks[randomCombo] // Puxa o link correspondente acima
     });
   };
 

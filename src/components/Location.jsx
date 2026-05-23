@@ -7,15 +7,15 @@ export default function Location() {
       </h2>
       
       <p className="text-gray-300 text-center max-w-md leading-relaxed mb-8 text-base sm:text-lg">
-        R. Vítor Emanuel Imesi, 316 / 320<br />
-        Parque Pinheiros<br />
-        Poços de Caldas - MG, 37706-063
+        Rua Saulo Inácio de Carvalho, 505<br />
+        Itamaraty 2<br />
+        Poços de Caldas - MG
       </p>
 
-      {/* Container do Mapa do Google responsivo */}
+      {/* Container do Mapa do Google responsivo com o link atualizado */}
       <div className="w-full max-w-3xl overflow-hidden rounded-2xl border border-neutral-700 shadow-lg group">
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.22683587186!2d-46.498880299999996!3d-21.8101649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9e83faf8983cf%3A0xdc9245390a2a4130!2sDestak%20Lanches!5e0!3m2!1sen!2sbr!4v1779497255371!5m2!1sen!2sbr" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14816.432245493774!2d-46.49839225018098!3d-21.81475531947659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9e838ed402577%3A0x3abcbcbfddd8928f!2sR.%20Saulo%20In%C3%A1cio%20de%20Carvalho%2C%20505%20-%20Regi%C3%A3o%20Urbana%20Homog%C3%AAnea%20XXIV%2C%20Po%C3%A7os%20de%20Caldas%20-%20MG%2C%2037710-205!5e0!3m2!1sen!2sbr!4v1779503599599!5m2!1sen!2sbr" 
           width="100%" 
           height="350" 
           style={{ border: 0 }} 
